@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Unseen";
+    src: url("fonts/the_unseen.ttf");
+}
+@font-face {
+    font-family: "Nightmare";
+    src: url("fonts/Nemo_Nightmares.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Unseen", "Times New Roman", sans-serif;
+}
+
+.main {
+    height: 768px;
+    width: 1024px;
+    border: solid #000000 5px;
+    background: url("images_folder/startScreenBackground.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.topSection {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 100px;
+    font-family: "Nightmare", "Times New Roman", sans-serif;
+}
+
+.middleSection {
+    height: 495px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.middleSection h1 {
+    position: relative;
+    top: 125px;
+    cursor: pointer;
+}
+
+.gameScreen {
+    height: 650px;
+    background: url("images_folder/gameScreenBackground.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.player {
+    margin-left: 10px;
+    position: absolute;
+    top: 535px;
+    z-index: 2;
+}
+
+.pumpkin {
+    position: absolute;
+    top: 555px;
+    left: 950px;
+}
+
+.scoreSection {
+    padding: 5px;
+}
+
+.instructions {
+    height: 80px;
+    width: 65%;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px;
+    border: solid #ffffff 5px;
+    color: #ffffff;
+}
+
+.scoreBox {
+    height: 80px;
+    border: solid #ffffff 5px;
+    width: 30%;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+}
+
+.styleBox {
+    width: 130px;
+    position: absolute;
+    top: 510px;
+    left: 870px;
+    display: none;
+    color: #ffffff;
+    border: #ffffff solid 2px;
+    padding: 3px;
+    text-align: center;
+}
+
+.fallingPumpkin {
+    position: relative;
+    float: left;
+    margin: 10px;
+    display: none
+}
+  
+.gameCenterDisplay {
+    color: #ffffff;
+    position: relative;
+    top: 175px;
+}
+
+.returnToStart {
+    display: none;
+    cursor: pointer;
+}
